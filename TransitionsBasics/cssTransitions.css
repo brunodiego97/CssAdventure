@@ -1,0 +1,13 @@
+button{
+    background-color: rgb(19, 176, 248);
+    color:white;
+    height: 90px;
+    width:290px;
+    border: none;
+    font-size:28px;
+    transition: 600ms;
+}
+
+button:hover{
+    background-color: rgb(12, 223, 107);
+}
