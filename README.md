@@ -1,2 +1,2 @@
 # CssAdventure
-Learning CSS Animations and Transforms
+:man_technologist:This is my first experience learning CSS animations.:man_technologist:
