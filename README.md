@@ -10,3 +10,6 @@
 
 <h4>First Day</h4>
 <a href="https://www.w3schools.com/cssref/sel_hover.asp">Hover</a>
+
+<h4>Second Day</h4>
+<a href="https://www.w3schools.com/css/css3_transitions.asp">Transitions and Transtions Options</a>
