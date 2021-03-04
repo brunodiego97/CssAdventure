@@ -15,11 +15,12 @@ button {
     border: none;
     font-size: 28px;
     transition: 600ms;
-    transition-delay: 500ms;
+    transition-delay: 100ms;
 }
 
 button:hover {
     background-color: rgb(12, 223, 107);
+    color: black;
 }
 
 .container {
