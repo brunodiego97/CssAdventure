@@ -1,0 +1,65 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background-color: rgb(243, 206, 43);
+  padding: 40px 80px;
+  font-size: 3rem;
+  font-family: sans-serif;
+  position: relative;
+}
+
+a:before{
+  content: 'Button';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: rotateX(270deg) ;
+  transform-origin: top;
+}
+a:hover:before{
+  transform: rotateX(0deg) ;
+
+}
+a:after{
+  content: 'Button';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  background-color: green;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: rotateX(-270deg) ;
+  transform-origin: bottom;
+  transition-delay: 0.25s;
+}
+a:hover:after{
+  transform: rotateX(0deg) ;
+
+}
