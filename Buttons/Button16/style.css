@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #c47135;
+  cursor: pointer;
+  color: white;
+  padding: 20px 60px;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS';
+  letter-spacing: 2px;
+  position: relative;
+}
+
+button:before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  width: 32px;
+  height: 32px;
+  border-top: 3px solid #c47135;
+  border-left: 3px solid #c47135;
+  transition: all 0.2s;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  width: 32px;
+  height: 32px;
+  border-bottom: 3px solid #c47135;
+  border-right: 3px solid #c47135;
+  transition: all 0.2s;
+}
+
+button:hover:before, button:hover:after {
+  width: 98%;
+  height: 95%;
+}

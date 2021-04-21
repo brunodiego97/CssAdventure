@@ -1,0 +1,77 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Verdana;
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #f6b93b;
+  border: 3px solid #f6b93b;
+  padding: 30px 60px;
+  letter-spacing: 3px;
+  position: relative;
+  transition: all 0.5s;
+
+  overflow: hidden;
+}
+
+a:before, a:after, span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #f6b93b;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+a:before {
+  left: -25%;
+  top: 0;
+}
+
+a:after {
+  left: 25%;
+  top: -100%;
+}
+
+a span:before {
+  right: -25%;
+  top: 0;
+}
+
+a span:after {
+  right: 25%;
+  top: 100%;
+}
+
+a:hover:before {
+  left: 0;
+  top: 0;
+}
+
+a:hover:after {
+  left: 25%;
+  top: 0;
+}
+
+a:hover span:before {
+  right: 0;
+  top: 0;
+}
+
+a:hover span:after {
+  right: 25%;
+  top: 0;
+}
+
+a:hover{
+  color: #222;
+}
